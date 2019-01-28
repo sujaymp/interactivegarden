@@ -3,19 +3,22 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <style>
         .image-txt-container {
-  display:flex;
-  align-items:center;
-  flex-direction: row;
-}
-p {
-  
-  margin-left: 0;
-  padding-left: 10px;
-} 
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        p {
+            margin-left: 0;
+            padding-left: 10px;
+        }
+         
     </style>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -23,35 +26,67 @@ p {
     <script src="js/react-dom.js" crossorigin></script>
 
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
 </head>
 
 <body>
-    <div>
-        <h1 style="background-color:mediumseagreen;width: 900px;height: 50px;">Bitter gourd <a style="font-size: 20px">(Momordica
-                charantia)</a></h2>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- <h1 style="background-color:mediumseagreen;width: 900px;height: 50px;">Bitter gourd <a style="font-size: 20px">(Momordica
+                charantia)</a></h1> -->
+    <div class="jumbotron" style="height:15rem">
+        <h1 class="display-4" style="font-weight: bold">Bitter gourd</h1>
+        <p class="lead">Momordica charantia.</p>
+        <p>A tropical and subtropical vine of the family Cucurbitaceae, widely grown in Asia, Africa, and the Caribbean
+            for its edible fruit.</p>
+    </div>
 
-            <div class="image-txt-container">
-                <img src="bittergourdplant.png" alt="bitter gourd plant" height="370" width="320">
-                <p style="background-color:lightsteelblue;width: 570px;height: 370px;font-size: 18px;"><b style="font-size: 20px;color:darkblue;">Nutrition
-                        and cooking:</b><br>Bitter
+    <div class="image-txt-container">
+        <img src="bittergourdplant.png" alt="bitter gourd plant" height="320" width="280" hspace="5">
+        <div class="card" style="width: 30rem;">
+
+            <div class="card-body" style="background-image: url(bittergourd.jpg);">
+                <h5 class="card-title">NUTRITION AND COOKING</h5>
+                <p style="background-color: #ffffff;                          
+                opacity: 0.8;
+                filter: alpha(opacity=80); ">Bitter
                     gourd leaves are a good source of calcium, iron, phosphorus, and
                     vitamins A & B.Fruit contains folate, vitamin C, polypeptide-P,
                     and vegetable insulin or charantin, which lowers blood sugar
                     levels. Immature fruits, leaves, and young shoots are boiled,
                     pickled, and used in soups and curries.Immature fruits can be
                     stuffed, curried, steamed, pickled, and added as ingredients for
-                    stir- fries, stews, and soups.
-                </p>
-
+                    stir- fries, stews, and soups.</p>
+                <a href="#" class="btn btn-primary">More details</a>
             </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+
+            <div class="card-body" style="background-image: url(howtogrow.jpg);"">
+                <h5 style="
+                background-color: #ffffff" class="card-title">HOW TO GROW IN HDB</h5>
+                <p style="background-color: #ffffff;                          
+                opacity: 0.8;
+                filter: alpha(opacity=80); ">Provide
+                    full sun to this vine, and it will produce heavily. Also, as it is a tall vine, you will need
+                    to support it garden fence.
+                    <br><br> It tolerates a wide range of soils, but prefers permeable, sandy loam soil in a pot.
+                    <br> It can tolerate drought-like conditions for a short time but regular watering to keep the soil
+                    evenly moist is essential to ensure a good yield.</p>
+                <a href="#" class="btn btn-primary">More details</a>
+            </div>
+        </div>
+
     </div>
+
     <div id="moisture_textarea_container">
         <script src="moisture_info.js" type="text/babel"></script>
     </div>
-
-    <iframe width="1000px" height="1200px" frameborder="0" src="https://app.ubidots.com/ubi/public/getdashboard/VwZR_BVHnidT2ZKCGZjCnDllhaU"></iframe>
-
-
+    <iframe width="1000px" height="1000px" frameborder="0" src="https://app.ubidots.com/ubi/public/getdashboard/VwZR_BVHnidT2ZKCGZjCnDllhaU"></iframe>
 </body>
 
 </html>

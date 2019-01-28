@@ -2,7 +2,7 @@
 class MoistureInfo extends React.Component {
 
     render() {
-      return <div>  <h1 style={{color:'blue'}}>{this.props.msg}   <a style={{fontSize:20,color:'black'}}>{new Date().toLocaleTimeString()}</a></h1>   </div>
+      return <div>  <h1 style={{color:'green'}}>{this.props.msg}   <a style={{fontSize:20,color:'black'}}>{new Date().toLocaleTimeString()}</a></h1>   </div>
     }
   }
   
@@ -11,7 +11,7 @@ class MoistureInfo extends React.Component {
     // const domContainer = document.querySelector('#moisture_textarea_container');
     // ReactDOM.render(e(SoilConditionText, { msg: 'Moisture is good' }, null), domContainer);
     ReactDOM.render(
-      <MoistureInfo msg='Moisture is good'/>, 
+      <MoistureInfo msg='Soild moisture is good.'/>, 
       document.getElementById("moisture_textarea_container")
   );
   }
